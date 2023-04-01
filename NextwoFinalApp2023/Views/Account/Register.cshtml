@@ -16,7 +16,7 @@
                             <a class="aa-property-home" asp-action="" asp-controller="" asp-route-id="">Nextwo Academy</a>
                             <h4>Create your account and Stay with us</h4>
                         </div>
-                        <form class="contactform">
+                        <form class="contactform" method="post" asp-action="Register">
                             <div class="aa-single-field">
                                 <label for="name">Name <span class="required">*</span></label>
                                 <input asp-for="Name" required="required" aria-required="true" value="" name="name">
