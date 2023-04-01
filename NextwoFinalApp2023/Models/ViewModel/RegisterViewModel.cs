@@ -4,6 +4,10 @@ namespace NextwoFinalApp2023.Models.ViewModel
 {
     public class RegisterViewModel
     {
+        
+        [Required(ErrorMessage = "Enter Name")]
+        public string? Name { get; set; }
+
         [DataType(DataType.EmailAddress)]
         [Required(ErrorMessage = "Enter Email")]
         public string? Email { get; set; }

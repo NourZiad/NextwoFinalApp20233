@@ -103,7 +103,9 @@
     <!-- End menu section -->
     <!-- Start slider  -->
     <section id="aa-slider">
-        <div class="aa-slider-area">
+        @await Component.InvokeAsync("Slider")
+
+        @*<div class="aa-slider-area">
             <!-- Top slider -->
             <div class="aa-top-slider">
                 <!-- Top slider single slide -->
@@ -183,7 +185,7 @@
                 <!-- / Top slider single slide -->
              
             </div>
-        </div>
+        </div>*@
     </section>
     <!-- End slider  -->
    

@@ -36,7 +36,7 @@ namespace NextwoFinalApp2023.Controllers
             {
                 IdentityUser user = new IdentityUser
                 {
-                    UserName = model.Email,
+                    UserName = model.Name,
                     Email = model.Email,
                     PhoneNumber = model.Phone
                 };
