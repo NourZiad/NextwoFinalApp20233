@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Partner>
+
+<!-- Service section -->
+<section id="aa-service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-service-area">
+                    <div class="aa-title">
+                        <h2>Our Partner</h2>
+                        <span></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p>
+                    </div>
+                    <!-- service content -->
+                    <div class="aa-service-content">
+                        <div class="row">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-md-3">
+                                    <div class="aa-single-service">
+                                        <div class="aa-service-icon">
+                                            <span class="fa fa-home"></span>
+                                        </div>
+                                        <div class="aa-single-service-content">
+                                            <h4><a href="#">@item.PartnerName</a></h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus quasi asperiores itaque dolorem at.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Service section -->
