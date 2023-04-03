@@ -17,4 +17,13 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Administrator\Data\" />
+    <Folder Include="Areas\Administrator\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\dashboard\vendors\bootstrap-wysihtml5\.settings\.gitignore" />
+  </ItemGroup>
+
 </Project>

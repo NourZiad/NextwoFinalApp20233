@@ -70,7 +70,7 @@ namespace NextwoFinalApp2023.Controllers
                     (model.Email!, model.Password!, false, false);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Dashboard",new {area = "Administrator"});
                 }
 
                 ModelState.AddModelError("", "Invalid user or password");
